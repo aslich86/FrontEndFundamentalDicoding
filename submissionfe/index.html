@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APLIKASI BOOKSHELF IWAN</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>APLIKASI BOOKSHELF IWAN</h1>
+    </header>
+    <div class="container">
+        <div class="shelf" id="unfinished-shelf">
+            <h2>Belum Selesai Dibaca</h2>
+            <ul id="unfinished-list"></ul>
+        </div>
+        <div class="shelf" id="finished-shelf">
+            <h2>Selesai Dibaca</h2>
+            <ul id="finished-list"></ul>
+        </div>
+    </div>
+    <div class="add-book">
+        <h2>Tambah Buku</h2>
+        <input type="text" id="title" placeholder="Judul">
+        <input type="text" id="author" placeholder="Penulis">
+        <input type="number" id="year" placeholder="Tahun">
+        <input type="checkbox" id="is-complete">
+        <label for="is-complete">Selesai Dibaca</label>
+        <button onclick="addBook()">Tambah</button>
+    </div>
+
+    <footer>
+        <p>© 2024 Iwan Aslich. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
